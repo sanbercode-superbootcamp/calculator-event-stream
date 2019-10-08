@@ -1,11 +1,9 @@
 const { calculate, emitter } = require('./calculator')
-const { output, doublingValue } = require('./stream');
+const { output, doublingValue, passToFile } = require('./stream');
 
 emitter.on('calculateFinish', function(result) {
-    doublingValue.write(result.toString());
+    passToFile(result);
 });
-
-doublingValue.pipe(output);
 
 calculate('plus', 5,5);
 calculate('minus', 5,5);

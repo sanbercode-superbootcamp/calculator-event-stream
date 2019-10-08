@@ -9,9 +9,20 @@ const doublingValue = new Transform({
         let result = chunk.toString();
         result = parseInt(result)*2;
         this.push(result+"\n");
+        console.log(result);
         callback();
     }
 });
 
+const passToFile = function(input){
+    return new Promise((resolve, reject) => {
+        doublingValue.write(input.toString());
+        doublingValue.pipe(process.stdout);
+        doublingValue.pipe(output);
+        resolve("Stream Success");
+    });
+}
+
 exports.output = output;
 exports.doublingValue = doublingValue;
+exports.passToFile = passToFile;
