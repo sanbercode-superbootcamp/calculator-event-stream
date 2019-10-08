@@ -7,19 +7,19 @@ emitter.on('multiply', multiply);
 emitter.on('divide', divide);
 
 function plus(data) {
-    console.log(data.a + data.b);
+    emitter.emit('calculateFinish', data.a + data.b);
 }
 
 function minus(data) { 
-    console.log(data.a - data.b);
+    emitter.emit('calculateFinish', data.a - data.b);
 }
 
 function multiply(data) { 
-    console.log(data.a * data.b);
+    emitter.emit('calculateFinish', data.a * data.b);
 }
 
 function divide(data) { 
-    console.log(data.a / data.b);
+    emitter.emit('calculateFinish', data.a / data.b);
 }
 
 function calculate(operation, a, b) {
@@ -27,3 +27,4 @@ function calculate(operation, a, b) {
 }
 
 exports.calculate = calculate;
+exports.emitter = emitter;

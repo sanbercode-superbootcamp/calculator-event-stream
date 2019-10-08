@@ -1,17 +1,21 @@
 const { expect } = require('chai');
 const { stub } = require('sinon');
-const { calculate } = require('./calculator');;
+const { calculate, emitter } = require('./calculator');
 
 describe('Calculator', function() {
     it('should run the console log with message result of calculation', function() {
-        stub(console, 'log');
+        let res;
+        emitter.on('calculateFinish', function(result) {
+            console.log(result);
+            res = result;
+        })
         calculate('plus', 5, 6);
-        expect(console.log.calledWith(11)).to.be.true;
+        expect(res).to.be.eq(11);
         calculate('minus', 5, 4);
-        expect(console.log.calledWith(1)).to.be.true;
+        expect(res).to.be.eq(1);
         calculate('multiply', 5, 4);
-        expect(console.log.calledWith(20)).to.be.true;
+        expect(res).to.be.eq(20);
         calculate('divide', 4, 2);
-        expect(console.log.calledWith(2)).to.be.true;
+        expect(res).to.be.eq(2);
     })
 })
