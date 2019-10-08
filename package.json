@@ -1,25 +1,14 @@
 {
-  "name": "calculator-event-stream",
+  "name": "calculator-event-emitter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "basic-event": "node ./src/event/basic-event.js",
-    "stream-chunk": "node ./src/stream/1-chunk-and-buffer.js",
-    "server-file-whole": "node ./src/stream/2-server-load-asWhole.js",
-    "server-file-stream": "node ./src/stream/3-server-load-stream.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanbercode-superbootcamp/calculator-event-stream.git"
+    "start" : "node index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sanbercode-superbootcamp/calculator-event-stream/issues"
-  },
-  "homepage": "https://github.com/sanbercode-superbootcamp/calculator-event-stream#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.1"

@@ -1,23 +1,12 @@
-Event & Stream
-===================
+# Tugas 4 Calculator w/ Event Emitter and Stream
 
-Content
--------
-### Repository Anatomy
+## Introduction
+This task is about creating calculator as before. However, It uses event emitter for choosing calculator operation. Moreover, the calculator program has four operations such as addition, substration, multiplication, and division. For the unit testing, I use mocha and chai same as the task before. Finally, the result of the test is writen in the output.txt file using transform stream with multiplication by 2.
 
-- `assets` - all assets used or stored in here. example: file
-- `lib` - calculator event library
-- `src` - source code used on training
+## Using
++ Node.js Event Emitter
++ Node.js Transform Stream
++ Mocha and Chai for testing
 
-Getting Started
----------------
-
-``` bash
-npm install
-npm run test
-npm run basic-event
-... another scripts
-```
-Make sure you create a sample big file with name `lorem.txt` inside `assets` folder before run any scripts.
-
-The presentation slide can be seen [here](https://drive.google.com/open?id=16prljZEnOU1_fJVXLLROgcoLxeceZbJlwQw7bAxe1b0)
+---
+***created by arifintahu***
