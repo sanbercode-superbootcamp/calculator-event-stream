@@ -1,0 +1,16 @@
+{
+  "name": "tugas-h6-hilmi",
+  "version": "1.0.0",
+  "description": "calculator with event driven",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "hilmiID",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "sinon": "^7.5.0"
+  }
+}
