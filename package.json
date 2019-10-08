@@ -1,27 +1,24 @@
 {
-  "name": "calculator-event-stream",
-  "version": "1.0.0",
-  "description": "",
+  "name": "rob-async-calculator",
+  "version": "1.0.1",
+  "description": "calculator with async module",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha",
-    "basic-event": "node ./src/event/basic-event.js",
-    "stream-chunk": "node ./src/stream/1-chunk-and-buffer.js",
-    "server-file-whole": "node ./src/stream/2-server-load-asWhole.js",
-    "server-file-stream": "node ./src/stream/3-server-load-stream.js"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanbercode-superbootcamp/calculator-event-stream.git"
+    "url": "https://github.com/robithritz/rob-async-calculator.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sanbercode-superbootcamp/calculator-event-stream/issues"
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
   },
-  "homepage": "https://github.com/sanbercode-superbootcamp/calculator-event-stream#readme",
+  "author": "Robith Ritz",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.1"
+    "chai-as-promised": "^7.1.1",
+    "chai-eventemitter": "^1.1.1",
+    "chai-spies": "^1.0.0",
+    "mocha": "^6.2.1",
+    "sinon": "^7.5.0"
   }
 }
