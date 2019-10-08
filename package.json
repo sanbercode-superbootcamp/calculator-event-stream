@@ -4,7 +4,7 @@
   "description": "calculator with event driven",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "author": "hilmiID",
   "license": "ISC",
