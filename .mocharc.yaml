@@ -1,1 +1,1 @@
-spec: '*/**.spec.js'
+spec: "./**/*.spec.js"
